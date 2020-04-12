@@ -1,0 +1,220 @@
+:root {
+  --primary: #11999e;
+  --secondary: #66bfbf;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  font-size: 10px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  color: #40514e;
+}
+img {
+  max-width: 100%;
+}
+.skills {
+  margin: 4em auto;
+}
+.top-container {
+  position: relative;
+  padding-top: 15rem;
+  background-color: rgb(224, 239, 243);
+  color: var(--primary);
+}
+.bottom-cloud {
+  position: absolute;
+  top: 20rem;
+  left: 1em;
+}
+.top-cloud {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+}
+.skill-row {
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 4em;
+  margin-top: 4em;
+  text-align: left;
+  line-height: 1.7;
+  width: 70%;
+}
+.skill-row > img {
+  width: 40%;
+}
+.img1 {
+  float: left;
+  margin-right: 2em;
+}
+.img2 {
+  float: right;
+  margin-left: 2.5em;
+}
+.middle-container,
+.bottom-container {
+  font-size: 1.5em;
+}
+#intro {
+  margin-top: 1em;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.profile {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+h1 {
+  font-family: "Itim", cursive;
+  font-size: 4.5em;
+  padding-bottom: 1rem;
+}
+hr {
+  border: none;
+  border-top: 0.7em dotted rgb(180, 175, 175);
+  width: 15%;
+  margin: 1em auto;
+}
+h2,
+h3,
+a {
+  color: var(--primary);
+  margin-top: 1em;
+}
+.top-container-subtitle {
+  font-family: "Pridi", serif;
+  font-size: 2em;
+  font-weight: normal;
+  line-height: 2;
+}
+.bottom-container {
+  padding-top: 1em;
+  width: 100%;
+  background-color: var(--secondary);
+  height: 5em;
+  line-height: 1.5;
+  border-top: 0.2em solid var(--primary);
+}
+.contact-me {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 4em;
+  line-height: 1.7;
+  margin-top: 4em;
+}
+.footer-link {
+  font-size: 1.6em;
+  color: #11999e;
+  margin: 1.5em 0.7em 0.5em 0.5em;
+}
+.footer-link:hover {
+  color: white;
+}
+.profile > img {
+  width: 20%;
+}
+.btn {
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #11999e),
+    color-stop(1, #406b99)
+  );
+  background: -moz-linear-gradient(center top, #11999e 5%, #406b99 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#11999e', endColorstr='#406b99');
+  background-color: #11999e;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-left-radius: 10px;
+  text-indent: 0;
+  display: inline-block;
+  color: #ffffff;
+  font-family: arial;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  height: 45px;
+  line-height: 45px;
+  width: 120px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+.btn:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #406b99),
+    color-stop(1, #11999e)
+  );
+  background: -moz-linear-gradient(center top, #406b99 5%, #11999e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#406b99', endColorstr='#11999e');
+  background-color: #406b99;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 5.5em;
+  }
+  .skill-row > img {
+    width: 25%;
+  }
+  #intro {
+    width: 40%;
+  }
+  .profile > img {
+    width: 12%;
+  }
+  .skill-row {
+    width: 45%;
+  }
+  .contact-me {
+    width: 40%;
+  }
+  .top-cloud {
+    right: 8rem;
+  }
+  .bottom-cloud {
+    left: auto;
+  }
+}
+
+/*
+============== NOTES  ===================
+We cannot center block level elements if they have some defined width. so we use (margin: 0 auto;) 
+h1, p {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+=============================================
+em - the fanatic pronunciation of 'M.' In olden days M was used as a standard to size font.
+like 1em means size of one "M" 2em means two "M" placed horizontally(width of 'M') to each other.
+em' inherits the size of it's parent element.
+1em  = 16px = 100%
+rem = Root M - means it will not inherit the parent's size, but it will be multiplied by 16px.
+=============================================
+To clear float on an element use (clear: left; or right;). This will clear the float property on that element.
+*/
